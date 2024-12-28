@@ -1,7 +1,7 @@
 
-import logo from './logo.svg';
+
 import './App.css';
-import axios from 'axios';
+
 
 
 export default function App() {   
@@ -49,18 +49,18 @@ export default function App() {
         <footer>
           <p>
             This project was coded by
-            <a href="#" target="_blank">
+          
               Sarah Ward
-            </a>{" "}
+            {" "}
             and is
-            <a href="https://github.com/Sarahwcode/weather-react" target="_blank">
+            <a href="https://github.com/Sarahwcode/weather-react" target="_blank" rel="noreferrer">
               {" "}
               on GitHub
             </a>{" "}
             and
-            <a href="#" target="_blank">
+           
               hosted on Netlify
-            </a>
+          
           </p>
         </footer>
       </section>
