@@ -53,7 +53,7 @@ export default function App() {
               Sarah Ward
             </a>{" "}
             and is
-            <a href="#" target="_blank">
+            <a href="https://github.com/Sarahwcode/weather-react" target="_blank">
               {" "}
               on GitHub
             </a>{" "}
