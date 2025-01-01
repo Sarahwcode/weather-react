@@ -1,0 +1,36 @@
+
+.outside-body{
+    padding: 100px;
+    margin: 40px;
+}
+
+.Weather{
+    border: 1px solid black;
+    max-width: 1400px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+ul {
+    list-style: none;
+}
+.search  {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 5px;
+    width: 100%;
+    padding: 15px 5px;
+    
+}
+.input-form {
+    border-radius: 10px;
+    box-shadow: 1px 5px rgb(182, 181, 181);
+    border: solid 1px white;
+
+}
+.button {
+    background-color: transparent;
+    border-radius: 20px;
+    box-shadow: 1px 5px rgb(182, 181, 181);
+border: solid 1px white;
+}
