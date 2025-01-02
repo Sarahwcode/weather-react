@@ -7,7 +7,7 @@ import './App.css';
 export default function App() {   
   return (
     <div className='container'>
-      <Weather defaultCity= "London"/>
+      <Weather city= "London"/>
   
 <footer>
   This project was coded by Sarah Ward and is open sourced on <a href="https://github.com/Sarahwcode/weather-react" > Github</a>
