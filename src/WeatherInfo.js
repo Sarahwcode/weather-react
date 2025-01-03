@@ -20,15 +20,15 @@ export default function WeatherInfo(props)
         </ul>
                
         <ul >
-            <div className="row names-conditions ">
+            <div className="row  ">
             <li className="col-12 col-md-4 ">
-                Description: {props.data.description}
+                <span className="names-conditions ">Description: </span> {props.data.description}
             </li>
             <li className="col-12 col-md-4 ">
-              Humidity: {props.data.humidity}%
+              <span className="names-conditions" >Humidity:</span> {props.data.humidity}%
             </li>
             <li className="col-12 col-md-4  ">
-                Wind speed: {props.data.wind}mph
+              <span className="names-conditions" >Wind speed:</span> {props.data.wind}mph
             </li>
             </div>
         </ul>

@@ -64,6 +64,8 @@ a:hover {
   color: green;
 }
 .names-conditions {
-font-size: 20px;
-text-decoration: wavy;
+font-size: 18px;
+color: rgb(130, 195, 130);
+opacity: 0.5;
+
 }
