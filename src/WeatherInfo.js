@@ -1,6 +1,6 @@
 import React from "react";
 import DateFormat from "./DateFormat";
-
+import WeatherUnit from "./WeatherUnit";
 
 export default function WeatherInfo(props)
 {
@@ -34,10 +34,9 @@ export default function WeatherInfo(props)
             </li>
             </div>
         </ul>
-        <div className="temp-city">
-        <h1>{Math.round(props.data.temperature)}<span> °C</span></h1>
-                <h2>{props.data.city}</h2>
-                </div>
+      <WeatherUnit metric= {props.data.temperature}/>
+      <div className="temp-city">
+      <h2>{props.data.city}</h2></div>
                 </div>
             
             );

@@ -3,6 +3,7 @@ import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
 
+
 import "./Weather.css";
 
 export default function Weather(props) {
@@ -24,20 +25,21 @@ iconURL:  response.data.condition.icon_url,
 
 }
 
+
+
+function handleSubmit (event){
+event.preventDefault();
+search();
+}
+
+function handleCityChange (event){
+setCity(event.target.value);
+}
 function search (){
     const apiKey = "145ba0dc50b14bt75oafffd6a19b4a36";
 
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
-}
-
-function handleSubmit (event){
-event.preventDefault();
-search(city);
-}
-
-function handleCityChange (event){
-setCity(event.target.value);
 }
 if(weatherData.ready) {
 
@@ -50,7 +52,7 @@ if(weatherData.ready) {
                 <input type="submit" className="button"></input>
             </form>
       < WeatherInfo data= {weatherData}/>
-    
+   
     
         </div>
         </div>
