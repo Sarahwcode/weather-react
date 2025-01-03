@@ -45,7 +45,7 @@ if(weatherData.ready) {
 
     return (
        <div className="outside-body">
-        <div className="Weather">
+        <div className="Weather container">
 
             <form className="search" onSubmit={handleSubmit} > 
                 <input className="input-form" type="text" placeholder="Enter a city..." autoFocus="on" onChange={handleCityChange}></input>

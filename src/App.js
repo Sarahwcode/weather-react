@@ -9,7 +9,7 @@ export default function App() {
     <div className='container'>
       <Weather city = "London"/>
   
-<footer>
+<footer className="text-center">
   This project was coded by Sarah Ward and is open sourced on <a href="https://github.com/Sarahwcode/weather-react" > Github</a>
   </footer>
   </div>

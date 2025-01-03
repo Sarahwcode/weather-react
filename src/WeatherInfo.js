@@ -9,27 +9,25 @@ export default function WeatherInfo(props)
         <div >
           <ul >
         
-            <div className="row m-5 date-time">
-            <li className="col-4 ">
+            <div className="row m-2 date-time ">
+            <li className="col-12 col-md-6  ">
               <DateFormat date = {props.data.time}/>
             </li>
         
-            <li className="col-4">
-              
-            </li>
-            <li className="col-4 icon" ><img src={props.data.iconURL} alt="Weather Icon" />  </li>
+    
+            <li className="col-12 col-md-6  icon" ><img src={props.data.iconURL} alt="Weather Icon" />  </li>
             </div>
         </ul>
                
         <ul >
-            <div className="row m-5 pt-0 ">
-            <li className="col-3">
+            <div className="row names-conditions ">
+            <li className="col-12 col-md-4 ">
                 Description: {props.data.description}
             </li>
-            <li className="col-3 ">
+            <li className="col-12 col-md-4 ">
               Humidity: {props.data.humidity}%
             </li>
-            <li className="col-3 ">
+            <li className="col-12 col-md-4  ">
                 Wind speed: {props.data.wind}mph
             </li>
             </div>
