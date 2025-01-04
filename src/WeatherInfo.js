@@ -2,6 +2,7 @@ import React from "react";
 import DateFormat from "./DateFormat";
 import WeatherUnit from "./WeatherUnit";
 
+
 export default function WeatherInfo(props)
 {
     return (
@@ -35,7 +36,9 @@ export default function WeatherInfo(props)
       <WeatherUnit metric= {props.data.temperature}/>
       <div className="temp-city">
       <h2>{props.data.city}</h2></div>
+      
                 </div>
+
             
             );
     

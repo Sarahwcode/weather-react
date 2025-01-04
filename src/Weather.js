@@ -2,6 +2,7 @@ import React, {useState} from "react";
 import axios from "axios";
 
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 
 import "./Weather.css";
@@ -52,7 +53,7 @@ if(weatherData.ready) {
                 <input type="submit" className="button"></input>
             </form>
       < WeatherInfo data= {weatherData}/>
-   
+   <WeatherForecast  data= {weatherData}/>
     
         </div>
         </div>
