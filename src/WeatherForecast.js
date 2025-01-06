@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import axios from "axios";
 import "./WeatherForecast.css";
+import WeatherForcastDay from "./weatherForcastDay";
 
 export default function WeatherForecast (props){
    const [searching, setSearching] = useState (false);
@@ -8,38 +9,30 @@ const [weatherForecast, setWeatherForecast] = useState(null);
 
 
     function dailyForecast(response) {
+        console.log(response);
 setWeatherForecast(response.data.daily);
 setSearching(true);
  }
- 
-
 
 
   if (searching){
+   
 return (
- 
+   
     <div className="weatherForecast">
 <div className="row">
 <div className="col">
-<div>
-{weatherForecast[0].time}
-</div>
-<div>
-{weatherForecast[0].time}
-</div>
-<div>
-    <span>{weatherForecast[0].temperature.maximum}</span><span>{weatherForecast[0].temperature.minimum}</span>
-</div>
+<WeatherForcastDay data= {weatherForecast[0]} />
 </div>
 </div>
 
     </div>
    );}
    else {
-   
+    console.log("Coordinates:", props.coordinates.long, props.coordinates.lat);
     let forecastApiKey = "145ba0dc50b14bt75oafffd6a19b4a36";
 let forecastApiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${props.coordinates.long}&lat=${props.coordinates.lat}&key=${forecastApiKey}&units=metric`;
-axios.get(forecastApiUrl).then(dailyForecast);
+axios.get(forecastApiUrl).then(dailyForecast).catch(error => console.error("Error fetching weather data: ", error));
    return null;
    }
         }
