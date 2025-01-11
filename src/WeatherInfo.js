@@ -19,7 +19,9 @@ export default function WeatherInfo(props)
             <li className="col-12 col-md-6  icon" ><img src={props.data.iconURL} alt="Weather Icon" />  </li>
             </div>
         </ul>
-               
+        <WeatherUnit metric= {props.data.temperature}/>
+      <div className="temp-city">
+      <h2>{props.data.city}</h2></div>   
         <ul >
             <div className="row  ">
             <li className="col-12 col-md-4 ">
@@ -33,9 +35,7 @@ export default function WeatherInfo(props)
             </li>
             </div>
         </ul>
-      <WeatherUnit metric= {props.data.temperature}/>
-      <div className="temp-city">
-      <h2>{props.data.city}</h2></div>
+     
       
                 </div>
 
