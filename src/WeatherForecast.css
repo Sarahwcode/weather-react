@@ -1,6 +1,8 @@
 .weatherForecast {
     text-align: center;
+    width: 100%;
 }
 .miniTemp {
     opacity: 0.6;
+    width: 100%;
 }
