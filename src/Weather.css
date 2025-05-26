@@ -2,7 +2,7 @@
 .outside-body{
     padding: 100px;
     margin: 40px;
-    width: 100%;
+    max-width: 100%;
 }
 
 .Weather{
@@ -70,4 +70,14 @@ color: rgb(130, 195, 130);
 opacity: 0.7;
 width: 100%;
 
+}
+
+@media (max-width: 900px){
+    .outside-body{
+        padding: 0px;
+        margin: 0px;
+        max-width: 100%;
+    }
+    
+    
 }
